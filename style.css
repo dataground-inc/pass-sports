@@ -174,8 +174,8 @@ ul {
 }
 .valueText p {
   color: white;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
 }
 .icon {
   display: inline-flex;
@@ -307,7 +307,7 @@ ul {
 }
 .reviewSection {
   background-color: #f4f5ff;
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .reviewTitle {
