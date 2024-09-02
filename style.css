@@ -200,9 +200,9 @@ ul {
 .valueImage {
   border-radius: 8px;
   overflow: hidden;
-
   width: 100%;
   aspect-ratio: 327 / 160; /* 4:3 비율을 유지합니다 */
+  max-width: 360px;
   overflow: hidden; /* 이미지를 비율 내에서 잘라냅니다 */
   display: flex; /* 가운데 정렬을 위한 속성 */
   align-items: center;
