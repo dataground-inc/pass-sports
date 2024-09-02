@@ -26,6 +26,7 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 288px;
 }
 .moHeader {
   position: fixed;
@@ -40,26 +41,26 @@ ul {
 .moHeader a {
   color: white;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 24px;
 }
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 32px 72px;
 }
 
 .iconMenu {
   display: inline-block;
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 .iconMenu span {
   position: absolute;
   left: 50%;
   width: 100%;
-  height: 3px;
+  height: 6px;
   background: #ffffff;
   border-radius: 4px;
   transform: translate(-50%, 0) rotate(0deg);
@@ -100,7 +101,7 @@ ul {
 }
 .subList {
   display: block;
-  padding: 16px 24px;
+  padding: 32px 72px;
   list-style-type: none;
 }
 .subMenu.active {
@@ -125,11 +126,11 @@ ul {
   position: absolute;
   bottom: 10%;
   text-align: left;
-  padding: 2rem;
+  padding: 72px;
 }
 .heroTitle {
   display: none;
-  font-size: 2.4rem;
+  font-size: 4rem;
   color: #ffffff;
   font-weight: 700;
   line-height: 3rem;
@@ -140,7 +141,7 @@ ul {
   display: inline-flex;
 }
 .bigNumber p {
-  font-size: 48px;
+  font-size: 120px;
   font-weight: 700;
   color: #0399ff;
 }
@@ -155,21 +156,22 @@ ul {
   display: inline-flex;
   flex-flow: wrap;
   row-gap: 24px;
-  column-gap: 60px;
+  column-gap: 120px;
 }
 .mainSection {
   display: inline-flex;
   flex-direction: column;
-  gap: 60px;
-  padding: 48px 24px;
+  gap: 120px;
+  padding: 96px 72px;
+  margin: 120px 0;
 }
 .sectionTitle {
-  font-size: 1.7rem;
+  font-size: 3rem;
   font-weight: 700;
   color: white;
 }
 .cardDescription {
-  font-size: 14px;
+  font-size: 24px;
   color: #ced4da;
 }
 .valueText {
@@ -179,13 +181,21 @@ ul {
 }
 .valueText p {
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
 }
 .icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.icon.right {
+  width: 20x;
+  height: 20px;
+}
+.icon.close {
+  width: 72px;
+  height: 72px;
 }
 .valueImage {
   border-radius: 8px;
@@ -206,7 +216,7 @@ ul {
 }
 .valueWrap {
   display: flex;
-  gap: 32px;
+  gap: 32px 60px;
   flex-wrap: wrap;
   max-width: 1440px;
 }
@@ -218,6 +228,7 @@ ul {
   display: inline-flex;
   min-width: 300px;
   max-width: 440px;
+  cursor: pointer;
 }
 
 /* 모달 전체 화면 스타일 */
@@ -240,15 +251,15 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 16px 24px;
+  padding: 32px 144px;
   box-sizing: border-box; /* 패딩 포함하여 크기 계산 */
 }
 
 /* 닫기 버튼 스타일 */
 .close {
   position: absolute;
-  top: 32px;
-  right: 16px;
+  top: 64px;
+  right: 144px;
   cursor: pointer;
 }
 
@@ -260,12 +271,12 @@ ul {
   text-align: left;
   gap: 32px;
 }
-.modalHeader p {
-  font-size: 14px;
-  color: #868e96;
+.modalSub {
+  font-size: 24px;
+  color: #868e96
 }
 .modalBody h2 {
-  font-size: 32px;
+  font-size: 64px;
   font-weight: 700;
   color: #f1f3f5;
   margin: 0;
@@ -276,24 +287,26 @@ ul {
   gap: 6px;
 }
 .modalBody li {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 180%;
   color: #ced4da;
 }
 .modalBody p {
+  font-size: 32px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 140%;
   color: #f1f3f5;
 }
 .slick-slide {
   height: 480px;
   box-sizing: border-box;
-  margin: 0 6px;
+  margin: 0 12px;
 }
 .reviewCard {
-  height: 160px;
+  height: 200px;
+  width: 100%;
   background-color: #ffffff;
-  padding: 32px 16px;
+  padding: 32px 24px;
   box-sizing: border-box;
   border-radius: 8px;
   box-shadow: 0px 0px 2px rgba(23, 28, 97, 0.1);
@@ -302,31 +315,32 @@ ul {
   display: inline-flex;
 }
 .reviewCard h3 {
+  font-size: 24px;
   font-weight: 600;
   color: #171c61;
   margin: 0;
 }
 .reviewCard p {
-  font-size: 13px;
+  font-size: 16px;
   color: #495057;
 }
 .reviewSection {
   background-color: #f4f5ff;
-  padding: 100px 0;
+  padding: 240px 0;
 }
 
 .reviewTitle {
-  font-size: 24px;
+  font-size: 3rem;
   font-weight: 700;
   color: #171c61;
   text-align: center;
 }
 .reviewSub {
-  font-size: 14px;
+  font-size: 24px;
   color: #171c61;
   text-align: center;
-  margin-top: 8px;
-  margin-bottom: 60px;
+  margin-top: 16px;
+  margin-bottom: 100px;
 }
 .reviewText {
   display: inline-flex;
@@ -335,17 +349,19 @@ ul {
   gap: 8px;
 }
 .searchCenterBtn p {
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 500;
   color: #036eb7;
 }
 .searchCenterBtn {
-  width: 280px;
+  width: 480px;
+  min-width: 240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 24px;
+  padding: 12px 40px;
   background-color: #d8efff;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 .searchCenterSection {
   display: flex;
@@ -353,7 +369,7 @@ ul {
   gap: 48px 48px;
   justify-content: space-between;
   background-color: white;
-  padding: 60px 24px;!important
+  padding: 240px 144px;!important
   width: 100%;
 }
 .line {
@@ -370,9 +386,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 120px;
-  padding: 48px 24px;
+  padding: 100px 144px;
   background-color: #f8f9fa;
-
 }
 .footer.line {
   width: 100%;
@@ -385,10 +400,11 @@ ul {
   gap: 12px;
 }
 .footerSubWrap a {
-  font-size: 14px;
+  font-size: 18px;
   color: #868e96;
 }
 .footerTitle {
+  font-size: 20px;
   font-weight: 700;
   color: #495057;
 }
@@ -399,6 +415,252 @@ ul {
 }
 .footerDetail p{
   color: #868E96;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+@media (max-width: 1280px) {
+  .logo{
+    width: 188px;
+  }
+  .headerContainer {
+    padding: 16px 48px;
+  }
+  .iconMenu {
+    width: 24px;
+    height: 24px;
+  }
+  .iconMenu span {
+    height: 3px;
+  }
+  .subList {
+    padding: 16px 48px;
+  }
+  .moHeader a {
+    font-size: 16px;
+  }
+  .heroTitle {
+    font-size: 2.8rem;
+  }
+  .heroContent {
+    bottom: 10%;
+    padding: 2.4rem;
+  }
+  .bigNumber p {
+    font-size: 60px;
+  }
+  .sectionTitle {
+    font-size: 1.7rem;
+  }
+  .cardDescription {
+    font-size: 14px;
+  }
+  .mainSection {
+    gap: 60px;
+    padding: 48px 48px;
+    margin: 0;
+  }
+  .valueText p {
+    font-size: 18px;
+  }
+  .icon.right {
+    width: 20px;
+    height: 20px;
+  }
+  .modalContent {
+    padding: 16px 48px;
+  }
+  .close {
+    top: 36px;
+    right: 32px;
+  }
+  .icon.close {
+    width: 36px;
+    height: 36px;
+  }
+  .modalContent {
+    padding: 16px 24px;
+  }
+  .modalSub {
+    font-size: 14px;
+  }
+  .modalBody h2 {
+    font-size: 32px;
+  }
+  .modalBody li {
+    font-size: 14px;
+  }
+  .modalBody p {
+    font-size: 16px;
+  }
+  .reviewCard {
+    height: 160px;
+    padding: 32px 16px;
+  }
+  .reviewCard h3 {
+    font-size: 16px;
+  }
+  .reviewCard p {
+    font-size: 13px;
+  }
+  .reviewTitle {
+    font-size: 24px;
+  }
+  .reviewSub {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 60px;
+  }
+  .reviewSection {
+    background-color: #f4f5ff;
+    padding: 100px 0;
+  }
+  .slick-slide {
+    margin: 0 6px;
+  }
+  .searchCenterBtn p {
+    font-size: 14px;
+  }
+  .searchCenterBtn {
+    padding: 12px 24px;
+  }
+  .searchCenterSection {
+    padding: 60px 24px;!important
+  }
+  .footer {
+    padding: 48px 24px;
+  }
+  .footerSubWrap a {
+    font-size: 14px;
+  }
+  .footerTitle {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .footerDetail p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo{
+    width: 144px;
+  }
+  .headerContainer {
+    padding: 16px 24px;
+  }
+  .iconMenu {
+    width: 20px;
+    height: 20px;
+  }
+  .iconMenu span {
+    height: 3px;
+  }
+  .subList {
+    padding: 16px 24px;
+  }
+  .moHeader a {
+    font-size: 16px;
+  }
+  .heroTitle {
+    font-size: 2.4rem;
+  }
+  .heroContent {
+    bottom: 10%;
+    padding: 2rem;
+  }
+  .bigNumber p {
+    font-size: 48px;
+  }
+  .sectionTitle {
+    font-size: 1.7rem;
+  }
+  .cardDescription {
+    font-size: 14px;
+  }
+  .mainSection {
+    gap: 60px;
+    padding: 48px 24px;
+    margin: 0;
+  }
+  .valueText p {
+    font-size: 18px;
+  }
+  .icon.right {
+    width: 16px;
+    height: 16px;
+  }
+  .modalContent {
+    padding: 16px 24px;
+  }
+  .close {
+    top: 32px;
+    right: 16px;
+  }
+  .icon.close {
+    width: 36px;
+    height: 36px;
+  }
+  .modalContent {
+    padding: 16px 24px;
+  }
+  .modalSub {
+    font-size: 14px;
+  }
+  .modalBody h2 {
+    font-size: 32px;
+  }
+  .modalBody li {
+    font-size: 14px;
+  }
+  .modalBody p {
+    font-size: 16px;
+  }
+  .reviewCard {
+    height: 160px;
+    padding: 32px 16px;
+  }
+  .reviewCard h3 {
+    font-size: 16px;
+  }
+  .reviewCard p {
+    font-size: 13px;
+  }
+  .reviewTitle {
+    font-size: 24px;
+  }
+  .reviewSub {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 60px;
+  }
+  .reviewSection {
+    background-color: #f4f5ff;
+    padding: 100px 0;
+  }
+  .slick-slide {
+    margin: 0 6px;
+  }
+  .searchCenterBtn p {
+    font-size: 14px;
+  }
+  .searchCenterBtn {
+    padding: 12px 24px;
+  }
+  .searchCenterSection {
+    padding: 60px 24px;!important
+  }
+  .footer {
+    padding: 48px 24px;
+  }
+  .footerSubWrap a {
+    font-size: 14px;
+  }
+  .footerTitle {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .footerDetail p{
+    font-size: 14px;
+  }
 }
