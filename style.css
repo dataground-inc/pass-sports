@@ -197,7 +197,7 @@ ul {
   width: 72px;
   height: 72px;
 }
-.valueImage,.modalBodyImg {
+.valueImage {
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
@@ -493,19 +493,31 @@ ul {
   font-size: 18px;
   font-weight: 700;
   color: #036EB8;
+  text-align: left;
 }
 .centerDetailCard {
-  padding: 24px 16px;
+  padding: 24px 24px;
   background-color: white;
   border-radius: 12px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0px 24px;
+  flex-direction: row;
+  gap: 4px 36px;
   align-items: center;
   justify-content: center;
 }
 .centerContent {
   width: 100%;
+}
+.modalBodyImg {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 327 / 160;
+  max-width: 400px;
+  overflow: hidden;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1280px) {
   .logo{
@@ -627,6 +639,9 @@ ul {
   }
   .footerDetail p{
     font-size: 14px;
+  }
+  .centerDetailCard {
+    flex-direction: row;
   }
 }
 
@@ -750,5 +765,8 @@ ul {
   }
   .footerDetail p{
     font-size: 14px;
+  }
+  .centerDetailCard {
+    flex-direction: column;
   }
 }
