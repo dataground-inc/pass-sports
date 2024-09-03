@@ -504,7 +504,9 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
+.centerContent {
+  width: 100%;
+}
 @media (max-width: 1280px) {
   .logo{
     width: 188px;
